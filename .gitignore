@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Frontend
+node_modules/
+dist/
+
+# Local data and environment files
+backend/career_history.db
+backend/*.db
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel

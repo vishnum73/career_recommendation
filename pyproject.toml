@@ -1,0 +1,13 @@
+[project]
+name = "career-compass-ai"
+version = "1.0.0"
+requires-python = ">=3.12"
+
+[tool.vercel]
+entrypoint = "main.py"
+
+[tool.vercel.scripts]
+build = "npm --prefix frontend ci && npm --prefix frontend run build"
+
+[tool.vercel.fastapi.static]
+exclude = true
